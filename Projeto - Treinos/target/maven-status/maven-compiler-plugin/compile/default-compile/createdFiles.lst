@@ -1,0 +1,7 @@
+com/exemplo/treinos/model/Exercicio.class
+com/exemplo/treinos/mapper/ExercicioMapper.class
+com/exemplo/treinos/RastreamentoTreinosBackendApplication.class
+com/exemplo/treinos/mapper/TreinoMapper.class
+com/exemplo/treinos/controller/TreinoController.class
+com/exemplo/treinos/config/JacksonConfig.class
+com/exemplo/treinos/model/Treino.class
