@@ -15,7 +15,10 @@ const Treinos = () => {
 
   useEffect(() => {
     axios.get('/api/treinos')
-      .then(response => setTreinos(response.data))
+    .then(response => {
+      setTreinos(response.data);
+      console.log(treinos)
+    })
       .catch(error => console.error("Erro ao carregar os treinos:", error));
   }, []);
 
@@ -28,7 +31,6 @@ const Treinos = () => {
   const filtrarExerciciosPorTreino = (treinoId) => {
     const exerciciosDoTreino = todosExercicios.filter(exercicio => exercicio.treinoId === treinoId);
     setExerciciosFiltrados(exerciciosDoTreino);
-    console.log(exerciciosFiltrados)
   };
 
   const adicionarTreino = () => {
@@ -58,8 +60,7 @@ const Treinos = () => {
 
   const adicionarExercicio = () => {
     setExercicios([...exercicios, novoExercicio]);
-    setNovoExercicio({ nome: '', peso: '', series: '', repeticoes: '' }); // Limpa o formulário de exercício
-    console.log(exercicios)
+    setNovoExercicio({ nome: '', peso: '', series: '', repeticoes: '' });
   };
 
   return (
@@ -125,7 +126,7 @@ const Treinos = () => {
       <button onClick={adicionarTreino}>Adicionar Treino</button>
 
 
-      <h4>Todos os Treinos</h4>
+      <h2>Todos os Treinos</h2>
       <ul>
         {treinos.map(treino => (
           <li
@@ -141,7 +142,7 @@ const Treinos = () => {
         ))}
       </ul>
 
-      <h4>Exercícios do Treino Selecionado</h4>
+      <h3>Exercícios do Treino Selecionado</h3>
       <table>
         <thead>
           <tr>
