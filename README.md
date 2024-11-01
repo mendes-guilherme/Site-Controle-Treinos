@@ -1,6 +1,7 @@
-# Projeto de Rastreamento de Treinos
+# Projeto de Gerenciamento de Treinos
 
-Este projeto é uma aplicação completa para rastreamento de treinos, unindo um backend em Spring Boot e um frontend em React. A aplicação permite cadastrar treinos e exercícios associados, servindo tanto a API quanto a interface de usuário a partir do mesmo servidor.
+Aplicação para gerenciamento de treinos, com o backend em Spring Boot e um frontend em React. A aplicação permite cadastrar treinos e exercícios associados, servindo a API e a interface de usuário a partir do mesmo servidor.
+<img width="1431" alt="image" src="https://github.com/user-attachments/assets/335403dc-5153-4bc1-b90e-3d40690e9988">
 
 ## Pré-requisitos
 
@@ -19,16 +20,13 @@ Este projeto é uma aplicação completa para rastreamento de treinos, unindo um
 
 ### 2. Configurar o Backend (Spring Boot)
 
-1. Navegue até a pasta do backend:
+1. Pasta Backend:
 
    ```bash
    cd Backend
 
-2. Certifique-se de que o arquivo de configuração application.properties em Backend/src/main/resources/ esteja configurado com a conexão do banco de dados.
+2. Verificar se application.properties em Backend/src/main/resources/ esteja configurado com a conexão do banco de dados.
 
-3. Compile e inicie o backend:
-    ```bash
-    ./mvnw spring-boot:run
 
 ### 3. Configurar o Frontend (React)
 
@@ -36,15 +34,16 @@ Este projeto é uma aplicação completa para rastreamento de treinos, unindo um
     ```bash
     cd Frontend
     npm install
-    npm run build && npm run copy-build
+    npm run build 
 
 ## Executar o projeto
 1. Na pasta Backend, executar:
     ```bash
     ./mvnw spring-boot:run
+    
 2. Acessar a aplicação no browser em:
    http://localhost:8081
 
 ## Estrutura do Banco de Dados
 1. Tabela Treinos: Armazena os dados do treino (nome, descrição e data).
-2. Tabela Exercícios: Armazena os dados dos exercícios, relacionados ao treino, incluindo nome, peso, séries e repetições.
+2. Tabela Exercícios: Armazena os dados dos exercícios, relacionados ao treino, incluindo nome, peso, séries, repetições e Id do treino relacionado..
