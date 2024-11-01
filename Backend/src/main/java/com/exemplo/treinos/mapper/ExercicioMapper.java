@@ -8,7 +8,7 @@ import java.util.List;
 @Mapper
 public interface ExercicioMapper {
 
-    @Select("SELECT * FROM exercicios WHERE treino_id = #{treinoId}")
+    @Select("SELECT * FROM exercicios WHERE treinoId = #{treinoId}")
     List<Exercicio> findExerciciosByTreinoId(Long treinoId);
 
     @Insert("INSERT INTO exercicios (nome, peso, series, repeticoes, treinoId) " +
