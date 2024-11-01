@@ -1,7 +1,7 @@
 # Projeto de Gerenciamento de Treinos
 
 Aplicação para gerenciamento de treinos, com o backend em Spring Boot e um frontend em React. A aplicação permite cadastrar treinos e exercícios associados, servindo a API e a interface de usuário a partir do mesmo servidor.
-<img width="1431" alt="image" src="https://github.com/user-attachments/assets/335403dc-5153-4bc1-b90e-3d40690e9988">
+![image](https://github.com/user-attachments/assets/f084d4b4-c26d-493e-b972-e7ad78ea6a63)
 
 ## Pré-requisitos
 
